@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:woo/screens/chat.dart';
+import 'package:woo/screens/home.dart';
+import 'package:woo/screens/matches.dart';
+import 'package:woo/screens/stars.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,25 +17,25 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Woo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-            seedColor: const Color.fromARGB(255, 250, 0, 0)),
+        colorScheme:
+            ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 0, 0, 0)),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: ''),
+      home: const Main(title: ''),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class Main extends StatefulWidget {
+  const Main({super.key, required this.title});
 
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<Main> createState() => _MainState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MainState extends State<Main> {
   int _selectedIndex = 0;
 
   void _onItemTapped(int index) {
@@ -43,22 +47,10 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     const List<Widget> pages = <Widget>[
-      Icon(
-        Icons.home_outlined,
-        size: 150,
-      ),
-      Icon(
-        Icons.star_border,
-        size: 150,
-      ),
-      Icon(
-        Icons.favorite_border,
-        size: 150,
-      ),
-      Icon(
-        Icons.chat_bubble_outline,
-        size: 150,
-      ),
+      HomeScreen(),
+      StarsScreen(),
+      MatchesScreen(),
+      ChatScreen()
     ];
 
     return Scaffold(
