@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Woo',
       theme: ThemeData(
         colorScheme:
-            ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 0, 0, 0)),
+            ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 0, 0, 0)),
         useMaterial3: true,
       ),
       home: const Main(title: ''),
