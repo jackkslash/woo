@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/actionRow.dart';
-import '../widgets/userCard.dart';
+import '../widgets/userCard/userCard.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
