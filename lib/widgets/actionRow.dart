@@ -20,9 +20,11 @@ class ActionRow extends StatelessWidget {
             child: OutlinedButton(
               onPressed: () {},
               style: OutlinedButton.styleFrom(
-                minimumSize: Size.zero, // Set this
-                padding: EdgeInsets.zero, // and this
-              ),
+                  minimumSize: Size.zero, // Set this
+                  padding: EdgeInsets.zero, // and this
+                  side: const BorderSide(
+                      width: 1.5, color: Color.fromARGB(201, 218, 216, 216)),
+                  backgroundColor: const Color.fromARGB(199, 184, 184, 184)),
               child: const Icon(
                 Icons.star_outlined,
                 size: 15,
@@ -36,9 +38,10 @@ class ActionRow extends StatelessWidget {
             child: OutlinedButton(
               onPressed: () {},
               style: OutlinedButton.styleFrom(
-                minimumSize: Size.zero, // Set this
-                padding: EdgeInsets.zero, // and this
-              ),
+                  minimumSize: Size.zero, // Set this
+                  padding: EdgeInsets.zero, // and this
+                  side: const BorderSide(
+                      width: 1.5, color: Color.fromARGB(201, 218, 216, 216))),
               child: const Text("Compatible"),
             ),
           ),
@@ -49,9 +52,10 @@ class ActionRow extends StatelessWidget {
             child: OutlinedButton(
               onPressed: () {},
               style: OutlinedButton.styleFrom(
-                minimumSize: Size.zero, // Set this
-                padding: EdgeInsets.zero, // and this
-              ),
+                  minimumSize: Size.zero, // Set this
+                  padding: EdgeInsets.zero, // and this
+                  side: const BorderSide(
+                      width: 1.5, color: Color.fromARGB(201, 218, 216, 216))),
               child: const Text("Active Today"),
             ),
           ),
@@ -62,9 +66,10 @@ class ActionRow extends StatelessWidget {
             child: OutlinedButton(
               onPressed: () {},
               style: OutlinedButton.styleFrom(
-                minimumSize: Size.zero, // Set this
-                padding: EdgeInsets.zero, // and this
-              ),
+                  minimumSize: Size.zero, // Set this
+                  padding: EdgeInsets.zero, // and this
+                  side: const BorderSide(
+                      width: 1.5, color: Color.fromARGB(201, 218, 216, 216))),
               child: const Text("Nearby"),
             ),
           ),
@@ -75,9 +80,10 @@ class ActionRow extends StatelessWidget {
             child: OutlinedButton(
               onPressed: () {},
               style: OutlinedButton.styleFrom(
-                minimumSize: Size.zero, // Set this
-                padding: EdgeInsets.zero, // and this
-              ),
+                  minimumSize: Size.zero, // Set this
+                  padding: EdgeInsets.zero, // and this
+                  side: const BorderSide(
+                      width: 1.5, color: Color.fromARGB(201, 218, 216, 216))),
               child: const Text("New here"),
             ),
           ),
