@@ -24,10 +24,13 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          shape: const CircleBorder(),
+          onPressed: () {
+            print("dont like");
+          },
           backgroundColor: Colors.white,
           enableFeedback: false,
-          child: const Icon(Icons.favorite_border),
+          child: const Icon(Icons.close),
         )); // This trailing comma makes auto-formatting nicer for build methods.
   }
 }

@@ -4,6 +4,8 @@ import 'package:woo/screens/home.dart';
 import 'package:woo/screens/matches.dart';
 import 'package:woo/screens/stars.dart';
 
+import 'screens/userProfile.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -50,7 +52,8 @@ class _MainState extends State<Main> {
       HomeScreen(),
       StarsScreen(),
       MatchesScreen(),
-      ChatScreen()
+      ChatScreen(),
+      UserProfileScreen()
     ];
 
     return Scaffold(
@@ -74,6 +77,10 @@ class _MainState extends State<Main> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.chat_bubble_outline),
+            label: 'Chat',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_circle_outlined),
             label: 'Chat',
           ),
         ],
